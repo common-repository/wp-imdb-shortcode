@@ -1,0 +1,214 @@
+.imdb_body {
+	max-width: 700px;
+    float: left;
+    display: inline-block;
+}
+.imdb_body a:hover{
+    text-decoration: underline;
+}
+/*header*/
+.imdb_header {
+    padding: 10px 10px 10px 10px;
+    background-color: #333;
+    color: #fff;
+    width: 100%;
+    display: inline-block;
+    float: left;
+}
+.imdb_header a{
+	color: #fff;
+}
+/*title*/
+.imdb_title_div {
+    width: 85%;
+    display: inline-block;
+    float: left;
+}
+.imdb_title_div h1 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+.imdb_title_div .subtext {
+    font-size: 14px;
+}
+
+.imdb_title_div .subtext a {
+    font-size: 14px;
+}
+/*end title*/
+/*rating*/
+
+.imdb_rating_div {
+    width: 15%;
+    display: inline-block;
+    float: left;
+}
+.imdb_rating_div .imdbRating {
+    background: url(../images/images.png) no-repeat;
+    background-position: -15px -115px;
+    float: left;
+    padding: 0px 0 0 34px;
+    line-height: 20px;
+}
+
+.imdb_rating_div .ratingValue strong {
+    font-size: 24px;
+    font-weight: normal;
+    font-family: Arial;
+    line-height: 24px;
+}
+.imdb_rating_div .grey {
+    color: #6b6b6b;
+    font-size: 12px;
+}
+
+.hiddenImportant {
+    display: none !important;
+}
+/*end rating*/
+/*end header*/
+
+
+/*image*/
+.imdb_image a{
+	color: #fff;
+}
+.imdb_image {
+    padding: 10px 10px 10px 10px;
+    background-color: #333;
+    color: #fff;
+    width: 100%;
+    display: inline-block;
+    float: left;
+}
+.poster {
+    float: left;
+    display: inline-block;
+    width: 26.5%;
+}
+.slate {
+    float: right;
+    position: relative;
+    display: inline-block;
+    width: 70%;
+}
+a.slate_button.prevent-ad-overlay.video-modal {
+    display: block;
+    position: relative;
+    width: 100%;
+}
+.imdb_image .caption {
+    bottom: 0;
+    color: silver;
+    font-size: 11px;
+    left: 0;
+    padding: 10px;
+    position: absolute;
+    right: 0;
+    background: linear-gradient(transparent 10%, rgba(0,0,0,0.7) 60%, #000);
+}
+.slate_button:after {
+    background: url(../images/video_button.png) no-repeat;
+    background-position: 0 -80px;
+    content: "";
+    height: 80px;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 80px;
+}
+.trailer {
+    float: left;
+}
+.img_videos {
+    float: right;
+}
+/*end image*/
+
+.imdb_description {
+    background-color: #eee;
+    display: inline-block;
+    width: 100%;
+    float: left;
+    padding: 10px 10px 0px 10px;
+    font-size: 15px;
+}
+.imdb_description .imdb_details_head h4 {
+    font-size: 15px;
+    font-weight: bold;
+    margin: 5px 0px;
+    letter-spacing: 0.2px;
+}
+.imdb_description a{
+	color: #136CB2;
+}
+.imdb_details.born_dead {
+    margin-top: 10px;
+}
+.imdb_review {
+    background-color: #eee;
+    display: inline-block;
+    width: 100%;
+    float: left;
+    padding: 0px 10px 10px 10px;
+    font-size: 15px;
+}
+.imdb_review h4 {
+    font-size: 15px;
+    font-weight: bold;
+    margin: 5px 0px;
+    letter-spacing: 0.2px;
+}
+.imdb_review a{
+    color: #136CB2;
+}
+.imdb_award {
+    padding: 3px;
+    border: 2px solid #EFE3A4;
+    display: inline-block;
+    width: 100%;
+}
+.imdb_award p {
+    margin-bottom: 0px;
+    padding: 7px;
+    background-color: #e7cf55;
+}
+.imdb_award a {
+    color: #635555;
+    font-weight: bold;
+    font-size: 15px;
+}
+@media screen and (max-width: 767px) {
+    .imdb_body {
+        max-width: 300px;
+        margin-bottom: 20px;
+    }
+    .imdb_rating_div {
+        width: 100%;
+        margin-top: 10px;
+    }
+    .imdb_title_div {
+        width: 100%;
+            margin-top: 5px;
+    }
+    .imdb_rating_div .imdbRating {
+        
+        background-position: -15px -126px;
+    }
+    .poster{
+        display: none;
+    }
+    .slate {
+        float: right;
+        position: relative;
+        display: inline-block;
+        width: 100%;
+    }
+    .imdb_image .caption {
+        bottom: -8px;
+    }
+
+}
